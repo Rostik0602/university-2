@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #111111;
+    background-color: #ffffff;
+}
+
+.page {
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 20px 16px 40px;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+}
+
+.hero__title {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #dfc5b9;
+}
+
+.hero__phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 36px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.hero__phone-icon {
+    width: 22px;
+    height: 22px;
+    fill: #dfc5b9;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+    padding-left: 80px;
+}
+
+.contact__photo {
+    flex-shrink: 0;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact__info {
+    max-width: 290px;
+    padding-top: 10px;
+}
+
+.contact__label {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #dfc5b9;
+}
+
+.contact__address {
+    margin-top: 26px;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 1.65;
+}
+
+.contact__divider {
+    width: 198px;
+    height: 10px;
+    margin: 32px 0 0;
+    border: none;
+    background-color: #454545;
+}
+
+.contact__text {
+    margin: 32px 0 0;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+/* Adaptive */
+
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 44px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contact__photo {
+        width: 260px;
+        height: 260px;
+    }
+
+    .contact__divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 34px;
+    }
+
+    .hero__phone {
+        font-size: 18px;
+    }
+}
